@@ -1,8 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
+    <style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    background-color: #fdd4b0;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.about-project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    background-color: #f3c181;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+.description h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução/title>
+    <title>Sobre o Projeto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body></body>
+<body>
+    <header>
+        <img src="img/logopets2.png" width="100">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="introducao.html">Introdução</a>
+            <a href="informacoes.html">Informações</a>
+            <a href="pets.html">Pets</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="about-project">
+            <div class="image">
+                <img src="img/nina.png" width="250">
+            </div>
+            <div class="description">
+                <h2>Sobre o Projeto</h2>
+                <p>O Projeto tem como missão cuidar dos cachorros que vivem no IFPR. Queremos garantir que esses animais recebam ração, cuidados, e um abrigo confortável. Com a sua ajuda, por meio de doações, podemos melhorar a qualidade de vida desses cães!</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
