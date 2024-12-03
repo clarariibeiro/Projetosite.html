@@ -2,94 +2,98 @@
 <html lang="pt-BR">
 <head>
     <style>
-        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fdfdfd;
-}
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fdd4b0;
+            padding: 10px 20px;
+            text-align: center;
+        }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffc8a2;
-    padding: 10px 20px;
-}
+        header .logo img {
+            width: 50px;
+            margin-right: 20px;
+        }
 
-header .logo img {
-    width: 50px;
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
+        header nav ul li {
+            margin-left: 20px;
+        }
 
-header nav ul li {
-    margin-left: 20px;
-}
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
 
-header nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
+        .team {
+            text-align: center;
+        }
 
-.team {
-    text-align: center;
-}
+        .team-card {
+            background-color: #e5b98d;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+        }
 
-.team-card {
-    background-color: #e5b98d;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    width: 200px;
-}
+        .team-card p {
+            margin: 5px 0;
+        }
 
-.team-card p {
-    margin: 5px 0;
-}
+        .team-row {
+            display: flex;
+            justify-content: center;
+        }
 
-.team-row {
-    display: flex;
-    justify-content: center;
-}
+        .coordinator {
+            margin: 20px auto;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informações</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <img src="img/logopets2.png" width="100">
-
         <nav>
-            <a href="index.html">Home</a>
-            <a href="introducao.html">Introdução</a>
-            <a href="informacoes.html">Informações</a>
-            <a href="pets.html">Pets</a>
-            <a href="contato.html">Contato</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introducao.html">Introdução</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <section class="team">
             <div class="team-card coordinator">
-                <p><strong>Suellyn Lopes</strong></p>
+                <p><strong>Suellen Lopes</strong></p>
                 <p>Coordenadora do Projeto</p>
             </div>
             <div class="team-row">
