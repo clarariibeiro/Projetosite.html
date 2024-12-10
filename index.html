@@ -16,7 +16,7 @@
             padding: 10px 20px;
         }
 
-        header .logo img {
+        header img {
             width: 70px;
         }
 
@@ -26,71 +26,62 @@
             justify-content: center;
         }
 
-        header nav ul {
-            list-style: none;
-            display: flex;
-        }
-
-        header nav ul li {
+        header nav a {
             margin: 0 10px;
-        }
-
-        header nav ul li a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
         }
 
-        header nav ul li a:hover,
-        header nav ul li a:focus {
+        header nav a:hover,
+        header nav a:focus {
             color: #7B3F00;
             text-decoration: underline;
         }
-        
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
+
+        main {
             padding: 20px;
-            text-align: center;
-            background-color: #fff;
         }
 
-        .text-content {
-            max-width: 600px;
+        section {
+            margin-bottom: 20px;
+        }
+
+        .sobre-o-projeto img {
+            max-width: 300px;
+            border-radius: 15px;
             margin-right: 20px;
         }
 
-        .text-content h1 {
-            font-size: 2.5rem;
+        .sobre-o-projeto {
+            display: flex;
+            align-items: center;
+            background-color: #fdd4b0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .sobre-o-projeto div {
+            max-width: 600px;
+        }
+
+        .sobre-o-projeto h2 {
             margin-bottom: 10px;
         }
 
-        .text-content h2 {
-            font-size: 1.5rem;
-            color: #666;
-            margin-bottom: 10px;
-        }
-
-        .text-content p {
-            font-size: 1rem;
-            margin: 5px 0;
-        }
-
-        .image-content img {
-            max-width: 300px;
-            border-radius: 15px;
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #fdd4b0;
         }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Projeto IFPR Pets</title>
 </head>
 <body>
     <header>
-        <img src="img/logopets2.png" width="100">
-
+        <img src="img/logopets2.png" alt="Logo IFPR Pets">
         <nav>
             <a href="index.html">Home</a>
             <a href="introducao.html">Introdução</a>
@@ -99,21 +90,27 @@
             <a href="contato.html">Contato</a>
         </nav>
     </header>
-    <footer>
-        <h5>Desenvolvido por: Allana LIma, Clara Ribeiro, Emanuele Pedroso e Ingrid Santos</h5>
-    </footer>
     <main>
-        <section class="hero">
-            <div class="text-content">
-                <h1>Projeto IFPR Pets</h1>
-                <h2>ANIMAIS DO INSTITUTO</h2>
-                <p>Campus Telêmaco Borba</p>
-                <p><strong>Bem-vindo ao site!</strong></p>
+        <section class="sobre-o-projeto">
+            <img src="img/cachorro.jpg" alt="Cachorro deitado">
+            <div>
+                <h2>Sobre o Projeto</h2>
+                <p>O Projeto tem como missão cuidar dos cachorros que vivem no IFPR. Queremos garantir que esses animais recebam ração, cuidados e um abrigo confortável. Com a sua ajuda, por meio de doações, podemos melhorar a qualidade de vida desses cães!</p>
             </div>
-            <div class="image-content">
-                <img src="img/pets.jpg" width="100">
-                 
+        </section>
+        <section>
+            <h2>Equipe do Projeto</h2>
+            <p>Coordenadora: Suellen Lopes</p>
+            <ul>
+                <li>Allana Lima - Informática I</li>
+                <li>Clara Ribeiro - Informática I</li>
+                <li>Emanuele Pedroso - Informática I</li>
+                <li>Ingrid Santos - Informática I</li>
+            </ul>
         </section>
     </main>
+    <footer>
+        <p>Desenvolvido por: Allana Lima, Clara Ribeiro, Emanuele Pedroso e Ingrid Santos</p>
+    </footer>
 </body>
 </html>
