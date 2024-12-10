@@ -1,8 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #FFD5A5;
+        }
+        
+        header .logo img {
+            height: 50px;
+        }
+        
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        
+        header nav a:hover {
+            color: #555;
+        }
+        
+        .contact-section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: #FFE9C6;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .contact-section h1 {
+            margin-bottom: 15px;
+            font-size: 2rem;
+            color: #7B3F00;
+        }
+        
+        .contact-section p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        
+        .contact-section a {
+            color: #7B3F00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>IFPR Pets - Contato</title>
+    <link rel="stylesheet" href="contato.css">
 </head>
-<body></body>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo IFPR Pets">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="introducao.html">Introdução</a>
+            <a href="informacoes.html">Informações</a>
+            <a href="pets.html">Pets</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contato</h1>
+            <p>Quer entrar em contato? Mande mensagem no Instagram ou em nosso Email!</p>
+            <p><a href="mailto:ifprpets@gmail.com">ifprpets@gmail.com</a></p>
+            <p><a href="https://instagram.com/ifpr.pets" target="_blank">@ifpr.pets via Instagram</a></p>
+        </section>
+    </main>
+</body>
+</html>
