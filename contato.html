@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contato do IFPR Pets. Entre em contato via email ou Instagram.">
+    <title>Contato</title>
     <style>
-        {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -31,6 +35,7 @@
         header nav ul {
             list-style: none;
             display: flex;
+            flex-wrap: wrap;
             margin: 0;
             padding: 0;
         }
@@ -43,6 +48,12 @@
             text-decoration: none;
             color: #333;
             font-weight: bold;
+        }
+
+        header nav ul li a:hover,
+        header nav ul li a:focus {
+            color: #7B3F00;
+            text-decoration: underline;
         }
 
         .logo {
@@ -71,18 +82,17 @@
             font-weight: bold;
         }
         
-        .contact-section a:hover {
+        .contact-section a:hover,
+        .contact-section a:focus {
             text-decoration: underline;
         }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFPR Pets - Contato</title>
-    <link rel="stylesheet" href="contato.css">
 </head>
 <body>
     <header>
-        <img src="img/logopets2.png" width="100">
+        <div class="logo">
+            <img src="img/logopets2.png" alt="Logo do IFPR Pets" width="100">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
