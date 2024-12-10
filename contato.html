@@ -6,6 +6,7 @@
     <meta name="description" content="Página de contato do IFPR Pets. Entre em contato via email ou Instagram.">
     <title>Contato</title>
     <style>
+        /* Estilo global */
         * {
             margin: 0;
             padding: 0;
@@ -16,28 +17,24 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
+            background-color: #fff;
         }
         
         header {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             background-color: #fdd4b0;
             padding: 10px 20px;
-            text-align: center;
         }
 
         header .logo img {
-            width: 50px;
-            margin-right: 20px;
+            width: 70px;
         }
 
         header nav ul {
             list-style: none;
             display: flex;
-            flex-wrap: wrap;
-            margin: 0;
-            padding: 0;
         }
 
         header nav ul li {
@@ -56,23 +53,24 @@
             text-decoration: underline;
         }
 
-        .logo {
-            margin: 20px auto;
+        .contact-section {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
             padding: 20px;
-            max-width: 600px;
             background-color: #FFE9C6;
             border-radius: 10px;
-            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        
+
         .contact-section h1 {
             margin-bottom: 15px;
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: #7B3F00;
         }
         
         .contact-section p {
-            font-size: 1rem;
+            font-size: 1.2rem;
             margin-bottom: 10px;
         }
         
@@ -91,7 +89,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img/logopets2.png" alt="Logo do IFPR Pets" width="100">
+            <img src="img/logopets2.png" alt="Logo do IFPR Pets">
         </div>
         <nav>
             <ul>
