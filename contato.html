@@ -16,28 +16,36 @@
         
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+            background-color: #fdd4b0;
             padding: 10px 20px;
-            background-color: #FFD5A5;
+            text-align: center;
         }
-        
+
         header .logo img {
-            height: 50px;
+            width: 50px;
+            margin-right: 20px;
         }
-        
-        header nav a {
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
             text-decoration: none;
             color: #333;
-            margin: 0 10px;
             font-weight: bold;
         }
-        
-        header nav a:hover {
-            color: #555;
-        }
-        
-        .contact-section {
+
+        contact-section {
             margin: 20px auto;
             padding: 20px;
             max-width: 600px;
