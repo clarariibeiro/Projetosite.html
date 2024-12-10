@@ -1,90 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        color: #333;
-        background-color: #fff;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-    header {
+        header {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             background-color: #fdd4b0;
             padding: 10px 20px;
-            text-align: center;
         }
 
-        header .logo img {
-            width: 50px;
-            margin-right: 20px;
+        header img {
+            width: 70px;
         }
 
-        header nav ul {
-            list-style: none;
+        header nav {
+            flex-grow: 1;
             display: flex;
-            margin: 0;
-            padding: 0;
+            justify-content: center;
         }
 
-        header nav ul li {
-            margin-left: 20px;
-        }
-
-        header nav ul li a {
+        header nav a {
+            margin: 0 10px;
             text-decoration: none;
             color: #333;
             font-weight: bold;
         }
 
-    .about-project {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        gap: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+        header nav a:hover,
+        header nav a:focus {
+            color: #7B3F00;
+            text-decoration: underline;
+        }
 
-    .image img {
-        max-width: 300px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+        main {
+            padding: 20px;
+        }
 
-    .description {
-        background-color: #f3c181;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        max-width: 400px;
-    }
+        .section-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    .description h2 {
-        font-size: 1.8rem;
-        margin-bottom: 10px;
-    }
+        .section-container img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
 
-    .description p {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
+        .section-container div {
+            flex: 1;
+        }
+
+        .section-container h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .section-container p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #fdd4b0;
+            margin-top: 20px;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Projeto IFPR Pets</title>
 </head>
 <body>
     <header>
-        <img src="img/logopets2.png" width="100">
-
+        <img src="img/logopets2.png" alt="Logo IFPR Pets">
         <nav>
             <a href="index.html">Home</a>
             <a href="introducao.html">Introdução</a>
@@ -94,15 +101,16 @@
         </nav>
     </header>
     <main>
-        <section class="about-project">
-            <div class="image">
-                <img src="img/nina.png" width="250">
-            </div>
-            <div class="description">
+        <section class="section-container">
+            <img src="img/nina.png" alt="Cachorro deitado">
+            <div>
                 <h2>Sobre o Projeto</h2>
-                <p>O Projeto tem como missão cuidar dos cachorros que vivem no IFPR. Queremos garantir que esses animais recebam ração, cuidados, e um abrigo confortável. Com a sua ajuda, por meio de doações, podemos melhorar a qualidade de vida desses cães!</p>
+                <p>O Projeto tem como missão cuidar dos cachorros que vivem no IFPR. Queremos garantir que esses animais recebam ração, cuidados e um abrigo confortável. Com a sua ajuda, por meio de doações, podemos melhorar a qualidade de vida desses cães!</p>
             </div>
         </section>
     </main>
+    <footer>
+        <p>Desenvolvido por: Allana Lima, Clara Ribeiro, Emanuele Pedroso e Ingrid Santos</p>
+    </footer>
 </body>
 </html>
