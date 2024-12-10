@@ -22,8 +22,7 @@
         
         header {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             background-color: #fdd4b0;
             padding: 10px 20px;
@@ -31,13 +30,17 @@
 
         header .logo img {
             width: 70px;
-            margin-bottom: 10px;
+        }
+
+        header nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
         }
 
         header nav ul {
             list-style: none;
             display: flex;
-            justify-content: center;
         }
 
         header nav ul li {
