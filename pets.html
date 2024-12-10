@@ -15,66 +15,74 @@
     }
 
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background-color: #FFD5A5;
-    }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fdd4b0;
+            padding: 10px 20px;
+            text-align: center;
+        }
 
-    header .logo img {
-        height: 50px;
-    }
+        header .logo img {
+            width: 50px;
+            margin-right: 20px;
+        }
 
-    header nav a {
-        text-decoration: none;
-        color: #333;
-        margin: 0 10px;
-        font-weight: bold;
-    }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
 
-    header nav a:hover {
-        color: #555;
-    }
+        header nav ul li {
+            margin-left: 20px;
+        }
 
-    .pets-section {
-        padding: 20px;
-        text-align: center;
-    }
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
 
-    .pets-section h1 {
-        margin-bottom: 20px;
-        font-size: 2rem;
-        color: #7B3F00;
-    }
+        .pets-section {
+            padding: 20px;
+            text-align: center;
+        }
 
-    .pet-card {
-        display: inline-block;
-        width: 250px;
-        margin: 10px;
-        padding: 15px;
-        background-color: #FFE9C6;
-        border-radius: 10px;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+        .pets-section h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #7B3F00;
+        }
 
-    .pet-card img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
+        .pet-card {
+            display: inline-block;
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #FFE9C6;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-    .pet-card h2 {
-        margin-top: 10px;
-        font-size: 1.5rem;
-        color: #7B3F00;
-    }
+        .pet-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
 
-    .pet-card p {
-        margin-top: 5px;
-        font-size: 1rem;
-    }
+        .pet-card h2 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            color: #7B3F00;
+        }
+
+        .pet-card p {
+            margin-top: 5px;
+            font-size: 1rem;
+        }
         </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,9 +91,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo IFPR Pets">
-        </div>
+        <img src="img/logopets2.png" width="100">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
