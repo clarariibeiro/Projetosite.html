@@ -1,9 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fdd4b0;
+            padding: 10px 20px;
+        }
 
-    <link rel="stylesheet" href="./css/pets.css">
+        header img {
+            width: 70px;
+        }
+
+        header nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        header nav a:hover,
+        header nav a:focus {
+            color: #7B3F00;
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-container img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .section-container div {
+            flex: 1;
+        }
+
+        .section-container h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .section-container p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #fdd4b0;
+            margin-top: 20px;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto IFPR Pets</title>
@@ -21,7 +102,11 @@
     </header>
     <main>
         <section class="section-container">
-          
+            <img src="img/cachorro.jpg" alt="Cachorro deitado">
+            <div>
+                <h2>Sobre o Projeto</h2>
+                <p>O Projeto tem como missão cuidar dos cachorros que vivem no IFPR. Queremos garantir que esses animais recebam ração, cuidados e um abrigo confortável. Com a sua ajuda, por meio de doações, podemos melhorar a qualidade de vida desses cães!</p>
+            </div>
         </section>
     </main>
     <footer>
