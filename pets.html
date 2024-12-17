@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FPR PETS</title>
+    <title>Pets</title>
     <style>
         * {
             margin: 0;
@@ -18,12 +18,12 @@
         }
 
         header {
-            background-color: #FFCC99;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            padding: 10px 30px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fdd4b0;
+            padding: 10px 20px;
+            text-align: center;
         }
 
         .logo {
@@ -57,71 +57,76 @@
 
         main {
             text-align: center;
-            margin: 20px 0;
+            margin: 20px auto;
         }
 
         h1 {
-            font-size: 1.8rem;
-            color: #333;
+            font-size: 2rem;
+            color: #444;
             margin-bottom: 30px;
         }
 
         .pets-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 30px 20px;
-            justify-items: center;
-            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .pet-card {
             background-color: #FFECB3;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 280px;
             padding: 15px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
             text-align: left;
         }
 
         .pet-card img {
-            width: 80px;
-            height: 80px;
-            border-radius: 8px;
+            width: 90px;
+            height: 90px;
+            border-radius: 10px;
             object-fit: cover;
         }
 
         .pet-info h3 {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             color: #333;
         }
 
         .pet-info p {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #666;
         }
 
-        .pet-card:nth-child(3) {
-            grid-column: span 2;
+        .pet-card.center {
+            width: 600px;
             justify-content: center;
+        }
+
+        .pet-card.center img {
+            width: 100px;
+            height: 100px;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="https://via.placeholder.com/50" alt="Logo FPR PETS">
-            <span><strong>FPR PETS</strong></span>
+            <img src="img/logopets2.png" alt="Logo IFPR PETS">
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Introdução</a></li>
-                <li><a href="#">Informações</a></li>
-                <li><a href="#">Pets</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introducao.html">Introdução</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -130,21 +135,21 @@
         <h1>Conheça os Pets</h1>
         <div class="pets-container">
             <div class="pet-card">
-                <img src="https://via.placeholder.com/80" alt="Negresco">
+                <img src="img/negrescopets.jpeg" alt="Negresco">
                 <div class="pet-info">
                     <h3>NEGRESCO</h3>
                     <p>7 ANOS</p>
                 </div>
             </div>
             <div class="pet-card">
-                <img src="https://via.placeholder.com/80" alt="Mentira/Polaca">
+                <img src="img/mentirapets.jpeg" alt="Mentira/Polaca">
                 <div class="pet-info">
                     <h3>MENTIRA/POLACA</h3>
                     <p>12 ANOS</p>
                 </div>
             </div>
-            <div class="pet-card">
-                <img src="https://via.placeholder.com/80" alt="Nina">
+            <div class="pet-card center">
+                <img src="img/ninapets.jpeg" alt="Nina">
                 <div class="pet-info">
                     <h3>NINA</h3>
                     <p>2 ANOS</p>
