@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets</title>
-    <link rel="stylesheet" href="./css/pets.css">
     <style>
-           * {
+        /* Reset Básico */
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -18,37 +18,34 @@
             color: #333;
         }
 
+        /* Estilização do Header */
         header {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             background-color: #fdd4b0;
             padding: 10px 20px;
-            text-align: center;
         }
 
-        header .logo img {
-            width: 50px;
-            margin-right: 20px;
+        header img {
+            width: 80px; /* Tamanho fixo para o logo */
+            height: auto;
         }
 
         header nav ul {
             list-style: none;
             display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        header nav ul li {
-            margin-left: 20px;
+            gap: 20px;
         }
 
         header nav ul li a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            font-size: 1rem;
         }
-        
+
+        /* Estilização do Conteúdo Principal */
         main {
             text-align: center;
             margin: 20px;
@@ -60,11 +57,12 @@
             color: #4D382A;
         }
 
-        .pets-container {
+        .pets-section {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
+            padding: 20px;
         }
 
         .pet-card {
@@ -74,7 +72,6 @@
             padding: 20px;
             width: 250px;
             text-align: center;
-            position: relative;
         }
 
         .pet-card img {
@@ -85,7 +82,7 @@
         }
 
         .pet-card h2 {
-            margin: 10px 0 5px 0;
+            margin: 10px 0 5px;
             font-size: 1.3rem;
             color: #333;
         }
@@ -95,11 +92,24 @@
             color: #4D382A;
             font-weight: bold;
         }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="img/logopets2.png">
+        <img src="img/logopets2.png" alt="Logo IFPR Pets">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
