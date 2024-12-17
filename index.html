@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <style>
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #fdd4b0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .text-content {
+            max-width: 600px;
+            margin-right: 20px;
+        }
+
+        .text-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .text-content h2 {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .text-content p {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+
+        .image-content img {
+            max-width: 300px;
+            border-radius: 15px;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./css/pets.css">
 </head>
 <body>
     <header>
-        <img src="img/logopets2.png" style="max-width: 10%;">
+        <img src="img/logopets2.png" alt="Logo IFPR Pets">
+
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="introducao.html">Introdução</a></li>
                 <li><a href="informacoes.html">Informações</a></li>
                 <li><a href="pets.html">Pets</a></li>
@@ -20,7 +94,7 @@
         </nav>
     </header>
     <main>
-        <section id="home" class="hero">
+        <section class="hero">
             <div class="text-content">
                 <h1>Projeto IFPR Pets</h1>
                 <h2>ANIMAIS DO INSTITUTO</h2>
@@ -28,12 +102,8 @@
                 <p><strong>Bem-vindo ao site!</strong></p>
             </div>
             <div class="image-content">
-                <img src="img/pets.jpg">
+                <img src="img/pets.jpg" alt="Imagem de pets">
             </div>
-        </section>
-        <section id="introducao" class="hero"></section>
-        </section>
-        <section id="informacoes" class="hero"></section>
         </section>
     </main>
 </body>
